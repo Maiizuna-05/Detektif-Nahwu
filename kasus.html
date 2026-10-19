@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kasus | Detektif Nahwu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-halaman="kasus">
+
+  <header class="bilah-atas">
+    <a href="index.html" class="logo">Detektif Nahwu</a>
+    <div class="status-detektif">
+      <span id="pangkat"></span>
+      <span id="poin"></span>
+    </div>
+  </header>
+
+  <main class="halaman-kasus">
+
+    <!-- TAHAP 1: cerita dan materi -->
+    <section id="tahap-cerita">
+      <h1 id="judul-kasus"></h1>
+      <p id="cerita-kasus" class="cerita"></p>
+      <div class="ringkasan">
+        <h2>Catatan nahwu</h2>
+        <p id="ringkasan-kasus"></p>
+      </div>
+      <button id="tombol-mulai" class="tombol" type="button">Mulai menyelidiki</button>
+    </section>
+
+    <!-- TAHAP 2: soal satu per satu -->
+    <section id="tahap-soal" class="tersembunyi">
+      <p id="progres" class="progres"></p>
+
+      <figure class="kartu-bukti">
+        <figcaption>Keterangan saksi</figcaption>
+        <p id="teks-arab" class="arab" lang="ar" dir="rtl"></p>
+      </figure>
+
+      <h2 id="teks-pertanyaan" class="teks-pertanyaan"></h2>
+      <div id="pilihan" class="pilihan"></div>
+
+      <p id="umpan-balik" class="umpan-balik" aria-live="polite"></p>
+      <button id="tombol-lanjut" class="tombol tersembunyi" type="button"></button>
+    </section>
+
+    <!-- TAHAP 3: hasil -->
+    <section id="tahap-selesai" class="tersembunyi">
+      <h1>Kasus selesai</h1>
+      <p id="lencana" class="lencana"></p>
+      <p id="skor-akhir" class="skor-akhir"></p>
+      <div class="ringkasan">
+        <h2>Rumus untuk buku catatan</h2>
+        <p id="rumus-kasus"></p>
+      </div>
+      <div class="aksi">
+        <a id="tombol-berikutnya" class="tombol" href="index.html">Kasus berikutnya</a>
+        <a class="tombol-sekunder" href="index.html">Kembali ke daftar kasus</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- data.js harus dimuat sebelum script.js -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

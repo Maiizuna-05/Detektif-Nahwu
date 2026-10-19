@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Detektif Nahwu</title>
+
+  <!-- Font: Bricolage Grotesque untuk teks Indonesia, Amiri untuk teks Arab -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-halaman="beranda">
+
+  <!-- BAGIAN 1: Bilah atas (pangkat dan poin) -->
+  <header class="bilah-atas">
+    <span class="logo">Detektif Nahwu</span>
+    <div class="status-detektif">
+      <span id="pangkat">Detektif Pemula</span>
+      <span id="poin">0 poin</span>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- BAGIAN 2: Hero berisi bukti pertama -->
+    <section class="hero">
+      <div class="hero-teks">
+        <h1>Harakat akhir kata adalah buktinya.</h1>
+        <p>Pecahkan kasus di madrasah dengan membaca peran setiap kata. Siapa pelaku, siapa korban, dan di mana barangnya?</p>
+        <a href="#daftar-kasus" class="tombol">Mulai menyelidiki</a>
+      </div>
+
+      <!-- Kartu bukti: inilah elemen utama halaman -->
+      <figure class="kartu-bukti">
+        <figcaption>Keterangan saksi, kasus 1</figcaption>
+        <p class="arab" lang="ar" dir="rtl">
+          ضَرَبَ الْوَلَدَ <mark>مُحَمَّدٌ</mark>
+        </p>
+        <p class="pertanyaan">Siapa yang memukul?</p>
+        <p class="petunjuk">Lihat harakat di akhir kata yang disorot.</p>
+      </figure>
+    </section>
+
+    <!-- BAGIAN 3: Daftar kasus -->
+    <section id="daftar-kasus" class="daftar-kasus">
+      <h2>Berkas kasus</h2>
+
+      <ol class="kasus" id="daftar"></ol>
+    </section>
+
+  </main>
+
+  <footer class="kaki">
+    <p>Proyek inovasi pembelajaran bahasa Arab untuk siswa MTs.</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
